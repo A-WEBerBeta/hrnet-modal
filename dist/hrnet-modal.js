@@ -2,7 +2,7 @@ import Ce, { useEffect as je } from "react";
 function ke(n) {
   return n && n.__esModule && Object.prototype.hasOwnProperty.call(n, "default") ? n.default : n;
 }
-var ne = { exports: {} }, K = {};
+var te = { exports: {} }, K = {};
 var ve;
 function Ie() {
   if (ve) return K;
@@ -259,9 +259,9 @@ React keys must be passed directly to JSX without using spread:
 }
 var me;
 function Me() {
-  return me || (me = 1, process.env.NODE_ENV === "production" ? ne.exports = Ie() : ne.exports = $e()), ne.exports;
+  return me || (me = 1, process.env.NODE_ENV === "production" ? te.exports = Ie() : te.exports = $e()), te.exports;
 }
-var J = Me(), oe = { exports: {} }, ae = { exports: {} }, R = {};
+var J = Me(), ne = { exports: {} }, oe = { exports: {} }, R = {};
 var be;
 function Ye() {
   if (be) return R;
@@ -342,17 +342,17 @@ function Ne() {
         var q = o.$$typeof;
         switch (q) {
           case O:
-            var te = o.type;
-            switch (te) {
+            var re = o.type;
+            switch (re) {
               case S:
               case P:
               case l:
               case c:
               case p:
               case _:
-                return te;
+                return re;
               default:
-                var pe = te && te.$$typeof;
+                var pe = re && re.$$typeof;
                 switch (pe) {
                   case f:
                   case T:
@@ -414,7 +414,7 @@ function Ne() {
 }
 var Te;
 function xe() {
-  return Te || (Te = 1, process.env.NODE_ENV === "production" ? ae.exports = Ye() : ae.exports = Ne()), ae.exports;
+  return Te || (Te = 1, process.env.NODE_ENV === "production" ? oe.exports = Ye() : oe.exports = Ne()), oe.exports;
 }
 var ie, he;
 function qe() {
@@ -893,16 +893,16 @@ function We() {
 }
 var Se;
 function Fe() {
-  if (Se) return oe.exports;
+  if (Se) return ne.exports;
   if (Se = 1, process.env.NODE_ENV !== "production") {
     var n = xe(), O = !0;
-    oe.exports = /* @__PURE__ */ Le()(n.isElement, O);
+    ne.exports = /* @__PURE__ */ Le()(n.isElement, O);
   } else
-    oe.exports = /* @__PURE__ */ We()();
-  return oe.exports;
+    ne.exports = /* @__PURE__ */ We()();
+  return ne.exports;
 }
 var Ue = /* @__PURE__ */ Fe();
-const re = /* @__PURE__ */ ke(Ue);
+const ae = /* @__PURE__ */ ke(Ue);
 function Ae({
   isOpen: n,
   onClose: O,
@@ -963,11 +963,10 @@ function Ae({
   ) : null;
 }
 Ae.propTypes = {
-  isOpen: re.bool.isRequired,
-  onClose: re.func.isRequired,
-  children: re.node,
-  className: re.string,
-  animation: re.oneOf(["fade", "zoom", "slide-up", "none"])
+  isOpen: ae.bool.isRequired,
+  onClose: ae.func.isRequired,
+  className: ae.string,
+  animation: ae.oneOf(["fade", "zoom", "slide-up", "none"])
 };
 Ae.defaultProps = {
   title: null,

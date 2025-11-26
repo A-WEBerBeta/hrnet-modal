@@ -1,11 +1,19 @@
 {
-  "name": "@aweb/hrnet-modal",
+  "name": "@aweb1112/hrnet-modal",
   "author": "Aurélie Weber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A reusable React modal component providing animations, accessibility, theming, designed to replace outdated jQuery modals in the HRnet application.",
   "main": "./dist/hrnet-modal.umd.cjs",
   "module": "./dist/hrnet-modal.js",
   "keywords": ["react", "modal", "hrnet", "plugin", "component", "ui"],
+  "homepage": "https://github.com/A-WEBerBeta/hrnet-modal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/A-WEBerBeta/hrnet-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/A-WEBerBeta/hrnet-modal/issues"
+  },
   "license": "MIT",
   "scripts": {
     "build": "vite build"

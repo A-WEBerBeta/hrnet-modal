@@ -31,7 +31,7 @@ It was created as part of the HRnet projet to replace the old jQuery plugin `jqu
 From your React app:
 
 ```bash
-npm install ../hrnet-modal
+npm install @aweb1112/hrnet-modal
 ```
 
 ## Usage
@@ -39,8 +39,8 @@ npm install ../hrnet-modal
 1. Import the component and CSS
 
 ```jsx
-import Modal from "hrnet-modal";
-import "hrnet-modal/dist/hrnet-modal.css";
+import Modal from "@aweb1112/hrnet-modal";
+import "@aweb1112/hrnet-modal/dist/hrnet-modal.css";
 ```
 
 2. Example
