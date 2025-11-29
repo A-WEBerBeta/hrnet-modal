@@ -26,6 +26,14 @@ It was created as part of the HRnet projet to replace the old jQuery plugin `jqu
 
 ---
 
+## Prerequisites
+
+- Node.js 18+ (recommended: 20+)
+- React 18
+- Any modern bundler supporting ES modules (ex: Vite)
+
+---
+
 ## Installation (local development)
 
 From your React app:

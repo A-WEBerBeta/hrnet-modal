@@ -909,9 +909,9 @@ function Ae({
   title: E,
   children: l,
   className: p = "",
-  // pour thèmes/couleurs via CSS vars
+  // Allows custom themes or additional classes
   animation: c = "fade"
-  // "fade" | "zoom" | "slide-up" | "none"
+  // Animation type: "fade" | "zoom" | "slide-up" | "none"
 }) {
   return je(() => {
     if (!n) return;

@@ -1,7 +1,7 @@
 {
   "name": "@aweb1112/hrnet-modal",
   "author": "Aurélie Weber",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A reusable React modal component providing animations, accessibility, theming, designed to replace outdated jQuery modals in the HRnet application.",
   "main": "./dist/hrnet-modal.umd.cjs",
   "module": "./dist/hrnet-modal.js",

@@ -2,15 +2,30 @@ import PropTypes from "prop-types";
 import { useEffect } from "react";
 import "./Modal.css";
 
+/**
+ * Modal component for displaying a dialog with overlay, animation,
+ * close button, and keyboard support.
+ *
+ * Features:
+ * - Close on overlay click
+ * - Close with Escape key
+ * - Accessible (role="dialog", aria-modal, aria-labelledby)
+ * - Animations via data attributes
+ * - Supports theming via className and CSS variables
+ */
+
 export default function Modal({
   isOpen,
   onClose,
   title,
   children,
-  className = "", // pour thèmes/couleurs via CSS vars
-  animation = "fade", // "fade" | "zoom" | "slide-up" | "none"
+  className = "", // Allows custom themes or additional classes
+  animation = "fade", // Animation type: "fade" | "zoom" | "slide-up" | "none"
 }) {
-  // Fermer la modale avec échap
+  /**
+   * Handle keyboard closing (Escape key).
+   * Only attaches the listener when the modal is open.
+   */
   useEffect(() => {
     if (!isOpen) return;
 
@@ -21,9 +36,12 @@ export default function Modal({
     };
 
     document.addEventListener("keydown", handleKeyDown);
+
+    // Cleanup when modal closes or component unmounts
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
+  // When modal is closed, render nothing
   if (!isOpen) return null;
 
   return (
@@ -40,6 +58,7 @@ export default function Modal({
         onClick={(e) => e.stopPropagation()}
         data-animation={animation}
       >
+        {/* Close button  */}
         <button
           type="button"
           className="modal-close"
@@ -56,12 +75,14 @@ export default function Modal({
           </svg>
         </button>
 
+        {/* Modal title (optional)  */}
         {title && (
           <h2 id="modal-title" className="modal-title">
             {title}
           </h2>
         )}
 
+        {/* Modal content  */}
         <div className="modal-content">{children}</div>
       </div>
     </div>
